@@ -5,7 +5,6 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.hilt.gradle)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.maps.secrets)
     alias(libs.plugins.android.gms)
     alias(libs.plugins.firebase.crashlytics)
 }
@@ -91,12 +90,6 @@ dependencies {
     ksp(libs.moshi.core)
     implementation(libs.moshi.kotlin)
 
-    // Google Maps
-    implementation(libs.maps.core)
-    implementation(libs.maps.compose)
-    implementation(libs.maps.gms)
-    implementation(libs.maps.location)
-
     // DataStore
     implementation(libs.datastore.core)
 
@@ -116,9 +109,7 @@ dependencies {
 
     //Image Loading
     implementation(libs.coil.compose)
-
-    implementation(libs.calendar)
-
+    
     // Testing etc
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

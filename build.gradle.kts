@@ -6,7 +6,6 @@ plugins {
     alias(libs.plugins.kotlin.kapt) apply false
     alias(libs.plugins.hilt.gradle) apply false
     alias(libs.plugins.ksp) apply false
-    alias(libs.plugins.maps.secrets) apply false
     alias(libs.plugins.android.gms) apply false
     alias(libs.plugins.firebase.crashlytics) apply false
 }

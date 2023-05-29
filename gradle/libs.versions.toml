@@ -1,15 +1,15 @@
 [versions]
-agp = "8.2.0-alpha04"
+agp = "8.2.0-alpha05"
 kotlin = "1.8.21"
 accompanist = "0.29.1-alpha" # accompanist navigation not working on 0.30.0
 androidxCore = "1.10.1"
-androidxSplashScreen = "1.0.0-alpha02" # do not update until v34 sdk
+androidxSplashScreen = "1.1.0-alpha01" # do not update until v34 sdk
 androidxLifecycle = "2.6.1"
-androidxActivity = "1.7.1"
+androidxActivity = "1.7.2"
 androidxComposeUi = "1.4.3"
 androidxComposeCompiler = "1.4.6"
-androidxComposeMaterial3 = "1.2.0-alpha01"
-androidxAppUpdate = "2.0.1"
+androidxComposeMaterial3 = "1.2.0-alpha02"
+androidxAppUpdate = "2.1.0"
 androidxHilt = "1.0.0"
 androidxNavigation = "2.5.3"
 androidxRoom = "2.5.1"
@@ -25,16 +25,10 @@ datastore = "1.1.0-alpha04"
 retrofit = "2.9.0"
 moshi = "1.14.0"
 dataStore = "1.0.0"
-phonenumbers = "8.9.9"
 okhttp = "4.10.0"
 gms = "4.3.15"
-mapsSecrets = "2.0.1"
-mapsVersion = "2.7.2"
-mapsGmsVersion = "18.1.0"
 firebase = "31.2.0"
 crashlytics = "2.9.2"
-calendar = "1.1.1"
-gms-location = "21.0.1"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
@@ -71,14 +65,8 @@ retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "ret
 retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 retrofit-okhttp = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
 
-# Google Maps
-maps-core = { module = "com.google.maps.android:maps-compose", version.ref = "mapsVersion" }
-maps-gms = { module = "com.google.android.gms:play-services-maps", version.ref = "mapsGmsVersion" }
-maps-compose = { module = "com.google.maps.android:maps-compose-widgets", version.ref = "mapsVersion" }
-maps-location = { module = "com.google.android.gms:play-services-location", version.ref = "gms-location" }
-
 # Firebase
-firebase-bom = "com.google.firebase:firebase-bom:31.2.0"
+firebase-bom = "com.google.firebase:firebase-bom:32.1.0"
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics-ktx" }
 firebase-fcm = { module = "com.google.firebase:firebase-messaging-ktx" }
 firebase-analytics = { module = "com.google.firebase:firebase-analytics-ktx" }
@@ -98,8 +86,6 @@ hilt-composenav = { module = "androidx.hilt:hilt-navigation-compose", version.re
 #Image Loading
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 
-calendar = { module = "io.github.boguszpawlowski.composecalendar:composecalendar", version.ref = "calendar" }
-
 # Tests
 junit = { module = "junit:junit", version.ref = "junit" }
 androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidxTestExt" }
@@ -115,7 +101,6 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 hilt-gradle = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-maps-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "mapsSecrets" }
 
 
 [bundles]
